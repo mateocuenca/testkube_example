@@ -17,8 +17,8 @@ jobs:
     steps:
     - uses: kubeshop/setup-testkube@v1
       with:
-        organization: tkcorg_8f77df7a24461b2e
-        environment: tkcenv_d6606793d0488ee0
+        organization: tkcorg_e2a9065930ed22b5
+        environment: tkcenv_3c467812524b75cc
         token: ${{ secrets.TK_TOKEN_API }}
     - run: |
         testkube run testworkflow pactum-pruebas-2 -f
