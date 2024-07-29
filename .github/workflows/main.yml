@@ -5,6 +5,13 @@ on:
     branches: [main]
 
 jobs:
+  print-token:
+    runs-on: ubuntu-latest
+    env:
+      MY_ENV_VAR: ${{ secrets.TK_TOKEN_API }}
+    steps:
+      - name: Print token api
+        run: echo $MY_ENV_VAR
   run-test:
     runs-on: ubuntu-latest
     steps:
