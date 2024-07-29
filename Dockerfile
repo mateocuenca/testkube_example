@@ -13,3 +13,7 @@ RUN npm install --save-dev
 # copy all files from current directory in the conatiner app directory
 COPY . .
 
+# Execute tests
+CMD ["npm", "run", "test"]
+
+
