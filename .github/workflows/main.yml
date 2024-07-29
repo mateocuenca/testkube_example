@@ -12,7 +12,7 @@ jobs:
       with:
         organization: tkcorg_8f77df7a24461b2e
         environment: tkcenv_d6606793d0488ee0
-        token: ${{ secrets.TK_API_TOKEN }}
+        token: ${{ secrets.TK_TOKEN_API }}
     - run: |
         testkube run testworkflow pactum-pruebas-2 -f
     
