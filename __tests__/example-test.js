@@ -1,6 +1,6 @@
 const pactum = require('pactum');
 
-describe('EScenario de ejemplo', () => {
+describe('EScenario de Ejemplo', () => {
 
     test('Prueba con datos validos', async () => {
         await pactum.spec()
